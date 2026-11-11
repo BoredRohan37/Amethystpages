@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amethyst</title>
+<style>
+  :root {
+    --bg: #0A0A0F;
+    --fg: #F5F5F7;
+    --accent: #8B5CF6;
+    --muted: #A0A0AE;
+    --border: rgba(245, 245, 247, 0.12);
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 28px 20px 64px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 18px;
+    padding-bottom: 18px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.92rem;
+  }
+
+  nav .brand {
+    margin-right: auto;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--fg);
+    text-decoration: none;
+  }
+
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a:hover, nav a:focus { color: var(--accent); }
+  nav a[aria-current="page"] { color: var(--accent); }
+
+  a { color: var(--accent); overflow-wrap: break-word; }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    margin: 0 0 6px;
+  }
+
+  .subtitle {
+    margin: 0 0 32px;
+    color: var(--muted);
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 36px 0 10px;
+  }
+
+  p { margin: 0 0 16px; }
+
+  ul { margin: 0 0 16px; padding-left: 1.25em; }
+  li { margin: 0 0 8px; }
+
+  strong { font-weight: 600; }
+
+  .note {
+    margin: 32px 0 0;
+    padding: 16px 18px;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+  }
+
+  .links { margin: 28px 0 0; font-size: 0.95rem; }
+  .links a { margin-right: 20px; }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    .wrap { padding: 22px 16px 56px; }
+    h1 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <a class="brand" href="index.html">Amethyst</a>
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </nav>
+
+  <main>
+    <h1>Amethyst</h1>
+    <p class="subtitle">A personal, single-user Android application.</p>
+
+    <p>
+      Amethyst is a personal, single-user Android application built by an individual
+      student developer for their own use. It has exactly one function: automatically
+      uploading one pre-made vertical video per day to the developer's own YouTube
+      channel at a scheduled time. All videos are pre-recorded and owned by the
+      developer.
+    </p>
+
+    <p>
+      The app is not distributed publicly, is not available on the Play Store, and has
+      no users other than its developer. Because there are no third parties, it does
+      not collect, store, share, or sell any personal data belonging to anyone else.
+      It does not use cookies, analytics, trackers, or advertising.
+    </p>
+
+    <div class="note">
+      <p style="margin:0;">
+        <strong>Amethyst is a personal project, not a commercial product.</strong>
+      </p>
+    </div>
+
+    <p class="links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </p>
+  </main>
+
+  <footer>
+    Amethyst &middot; personal project &middot; not a commercial product
+  </footer>
+
+</div>
+</body>
+</html>
