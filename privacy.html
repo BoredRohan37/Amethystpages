@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &middot; Amethyst</title>
+<style>
+  :root {
+    --bg: #0A0A0F;
+    --fg: #F5F5F7;
+    --accent: #8B5CF6;
+    --muted: #A0A0AE;
+    --border: rgba(245, 245, 247, 0.12);
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 28px 20px 64px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 18px;
+    padding-bottom: 18px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.92rem;
+  }
+
+  nav .brand {
+    margin-right: auto;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--fg);
+    text-decoration: none;
+  }
+
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a:hover, nav a:focus { color: var(--accent); }
+  nav a[aria-current="page"] { color: var(--accent); }
+
+  a { color: var(--accent); overflow-wrap: break-word; }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    margin: 0 0 6px;
+  }
+
+  .subtitle {
+    margin: 0 0 32px;
+    color: var(--muted);
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 36px 0 10px;
+  }
+
+  p { margin: 0 0 16px; }
+
+  ul { margin: 0 0 16px; padding-left: 1.25em; }
+  li { margin: 0 0 8px; }
+
+  strong { font-weight: 600; }
+
+  .updated {
+    margin: 0 0 32px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    .wrap { padding: 22px 16px 56px; }
+    h1 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <a class="brand" href="index.html">Amethyst</a>
+    <a href="index.html">Home</a>
+    <a href="privacy.html" aria-current="page">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </nav>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 1 June 2025</p>
+
+    <h2>1. What this app is</h2>
+    <p>
+      Amethyst is a personal, single-user Android application built by an individual
+      student developer for their own use. It is not distributed publicly, is not
+      available on the Play Store, and has no users other than its developer.
+    </p>
+    <p>
+      It has exactly one function: automatically uploading one pre-made vertical video
+      per day to the developer's own YouTube channel at a scheduled time. All videos
+      are pre-recorded and owned by the developer.
+    </p>
+
+    <h2>2. What data it accesses</h2>
+    <p>
+      Amethyst accesses the YouTube Data API v3 using a single OAuth scope:
+    </p>
+    <ul>
+      <li><strong>https://www.googleapis.com/auth/youtube.upload</strong></li>
+    </ul>
+    <p>
+      This scope is granted by the developer's own Google account and is used solely
+      to upload videos to that same account's channel. The app does not read, analyze,
+      or store any YouTube data beyond the video ID returned after a successful upload.
+    </p>
+    <p>
+      <strong>No data is collected from any user other than the developer</strong>,
+      because there are no other users. The app does not use cookies, analytics,
+      trackers, or advertising.
+    </p>
+
+    <h2>3. What data it stores</h2>
+    <p>
+      The only data Amethyst stores is a local checklist kept on the developer's own
+      device, containing:
+    </p>
+    <ul>
+      <li>the filename of each video that has already been uploaded;</li>
+      <li>the video ID returned by YouTube after each successful upload.</li>
+    </ul>
+    <p>
+      This checklist exists only to avoid uploading the same video twice. It is stored
+      locally on the device. Nothing is stored on a server, in the cloud, or anywhere
+      outside the device.
+    </p>
+
+    <h2>4. What data it shares</h2>
+    <p>
+      <strong>Nothing.</strong> No data is shared, sold, rented, published, or
+      transferred to anyone.
+    </p>
+
+    <h2>5. Third parties</h2>
+    <p>
+      The only third party involved is Google / YouTube, through the YouTube Data API
+      v3, which is used to perform the upload. No other third-party services, SDKs,
+      servers, or advertising networks are used.
+    </p>
+    <p>
+      Google's handling of data is described in Google's Privacy Policy:
+      <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a>.
+    </p>
+
+    <h2>6. YouTube API Services</h2>
+    <p>
+      Amethyst uses YouTube API Services and complies with the
+      <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service" rel="noopener">YouTube API Services Terms of Service</a>.
+      Use of YouTube through this app is also subject to the
+      <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a>
+      and to Google's Privacy Policy at
+      <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a>.
+    </p>
+
+    <h2>7. Data retention and deletion</h2>
+    <p>
+      The only stored data is the local checklist described above, which lives on the
+      developer's device. <strong>Uninstalling the app removes all of it.</strong>
+      There is no server-side copy and no account to delete.
+    </p>
+    <p>
+      Access granted to the app can be revoked at any time from the Google Account
+      permissions page:
+      <a href="https://myaccount.google.com/permissions" rel="noopener">https://myaccount.google.com/permissions</a>.
+    </p>
+
+    <h2>8. Contact</h2>
+    <p>
+      Questions about this policy can be sent to
+      <strong>youremail@example.com</strong>
+      <em>(placeholder address &mdash; replace with the developer's real email before publishing)</em>.
+    </p>
+  </main>
+
+  <footer>
+    Amethyst &middot; personal project &middot; not a commercial product
+  </footer>
+
+</div>
+</body>
+</html>
